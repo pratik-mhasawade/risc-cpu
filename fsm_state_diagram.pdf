@@ -1,0 +1,29 @@
++-------------------------+
+|         FETCH           |
+|  - PC outputs address   |
+|  - Instruction ROM reads|
++-----------+-------------+
+            |
+            v
++-------------------------+
+|       DECODE            |
+| - Decode opcode         |
+| - Set control signals   |
++-----------+-------------+
+            |
+            v
++-------------------------+
+|      EXECUTE            |
+| - Perform ALU ops       |
+| - Read/Write RAM        |
+| - Update ACC, PC, UART  |
++-----------+-------------+
+            |
+            v
++-------------------------+
+|       NEXT PC           |
+| - Increment or Jump PC  |
++-----------+-------------+
+            |
+            v
+         FETCH (loop)

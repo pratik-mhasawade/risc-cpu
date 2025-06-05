@@ -1,0 +1,36 @@
++-----------------+
+|     PC (5-bit)  |<-----------------------------+
++-----------------+                              |
+        |                                        | pc_write + new_pc
+        v                                        |
++--------------------+        instruction        |
+| Instruction ROM     |-------------------------->|
++--------------------+                           |
+        | instruction                             |
+        v                                        |
++--------------------+     opcode, operand       |
+| Control FSM         |<--------------------------+
++--------------------+
+        |                                         
+        | alu_op, acc_write, mem_read, mem_write,
+        | pc_write, uart_send, mem_addr, new_pc  
+        v                                         
++-----------------+                              
+| Data Memory (RAM)| <--- mem_addr, read/write data
++-----------------+           ^    ^                   
+        | mem_data              |    |                   
+        +----------------------+    | write_data (from ACC)
+                                     |                        
+                                     |                          
+                               +-----------------+
+                               | Accumulator (ACC)| <---- alu_result
+                               +-----------------+
+                                      ^    |
+                                      |    |
+                               +--------------+
+                               |     ALU      |
+                               +--------------+
+                             a=ACC data  b=RAM data
+                             op=alu_op control signal
+
+        uart_send -------------------------------------> UART Output (simulation)
