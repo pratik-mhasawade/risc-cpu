@@ -61,3 +61,8 @@ A custom-designed 8-bit RISC processor built from scratch using Verilog. This CP
 ```bash
 iverilog -o cpu risc_cpu.v testbench.v
 vvp cpu
+
+👨‍💻 Author
+Pratik Mhasawade
+Electronics and Telecommunication Engineering | VLSI & SoC Enthusiast
+🔗 LinkedIn | 💻 Portfolio | 📎 Resume
