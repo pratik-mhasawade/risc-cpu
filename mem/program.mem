@@ -1,0 +1,11 @@
+// program.mem — RV32I instruction memory (hex, word-addressed)
+// The testbench loads instructions directly into memory via task.
+// For standalone simulation, encode your RV32I program here.
+// Format: one 32-bit hex word per line, no 0x prefix.
+// Example: 00500093  → ADDI x1, x0, 5
+//
+// You can also compile C/assembly using the RISC-V toolchain:
+//   riscv32-unknown-elf-gcc -march=rv32i -mabi=ilp32 -nostdlib program.S -o program.elf
+//   riscv32-unknown-elf-objcopy -O verilog program.elf program.mem
+
+00000013

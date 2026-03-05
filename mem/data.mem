@@ -1,0 +1,6 @@
+// data.mem — RV32I data memory (hex, byte-addressed)
+// Format: one 8-bit hex byte per line.
+// 1024 entries = 4 KB of data memory.
+// The testbench writes values via SW instructions during execution.
+
+00
