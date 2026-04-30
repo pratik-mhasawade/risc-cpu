@@ -6,6 +6,7 @@ as a foundation for pipeline and SoC upgrades.
 
 ---
 
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/pratik-mhasawade/opencore)
 ## Features
 
 - Full **RV32I base integer ISA** — all 40 instructions
